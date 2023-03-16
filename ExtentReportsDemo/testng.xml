@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- 1. -->
+<suite name="Maven + Jenkins + GitHub Integration with Extent Reports - Guru99 Web Test Suite" thread-count="5" parallel="tests">
+	<!-- 2. -->
+	<test thread-count="5" name="Test Guru99 Website Page - Maven + Jenkins + GitHub Integration with Extent Reports">
+	<parameter name="guru99Url" value="http://demo.guru99.com/test/guru99home/" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="sdet" value="Dnice" />
+	<parameter name="sdet2" value="Yuki" />
+	<parameter name="category" value="Smoke Test" />
+	<parameter name="device" value="Chrome" />
+		<classes>
+			<class name="com.testcases.SampleTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
